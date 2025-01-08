@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+:root {
+  --primary: #ff6704;
+  --secondary: #787777;
+  --tertiary: #dedede;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
