@@ -1,1 +1,13 @@
-<p>header works!</p>
+<nav class="navbar">
+  <div appSectionWrapper class="navbar-wrapper">
+    <h1 class="branding">SpacePULSE</h1>
+    <ul class="navbar__links-wrapper">
+      @for (link of navLinks; track $index) {
+      <li class="navbar__link" routerLinkActive="navLink-active" routerLink="/{{ link }}">{{ link }}</li>
+      }
+    </ul>
+    <div>
+      <div>Search</div>
+    </div>
+  </div>
+</nav>

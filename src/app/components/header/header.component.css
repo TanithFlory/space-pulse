@@ -1,0 +1,37 @@
+.navbar {
+  width: 100vw;
+  height: 96px;
+  background-color: rgba(120, 119, 119, 0.2);
+  border-bottom: 1px solid var(--secondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: var(--white);
+}
+
+.navbar__links-wrapper {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: none;
+}
+
+.navbar-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navLink-active {
+  color: var(--primary);
+}
+
+.navbar__link {
+  cursor: pointer;
+  &:hover {
+    color: var(--primary);
+  }
+}
