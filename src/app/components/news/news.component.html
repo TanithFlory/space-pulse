@@ -1,0 +1,9 @@
+@if (!news()){
+<p>Loading...</p>
+}
+
+<div appSectionWrapper class="news-wrapper">
+  @for (article of news()?.results; track article.id) {
+  <app-news-card [article]="article" />
+  }
+</div>

@@ -1,0 +1,24 @@
+<div class="news-card">
+  <div class="news-img">
+    <img [src]="article().image_url | safeUrl" />
+  </div>
+  <div class="news-content">
+    <div class="news-content_date-site-wrapper">
+      <div class="news-content__date">
+        {{ article().published_at | date : "short" }}
+      </div>
+      <div class="news-content__site">
+        {{ article().news_site | truncateText : 10 }}
+      </div>
+    </div>
+    <div class="news-title" title="{{ article().title }}">
+      <h3>{{ article().title | truncateText : 35 }}</h3>
+    </div>
+    <div>
+      <p title="{{ article().summary }}">
+        {{ article().summary | truncateText : 80 }}
+      </p>
+    </div>
+    <a href="{{ article().url }}" target="_blank"> Read More </a>
+  </div>
+</div>
