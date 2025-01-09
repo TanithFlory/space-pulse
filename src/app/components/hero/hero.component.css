@@ -47,6 +47,7 @@
   font-weight: 800;
   z-index: 10;
   position: absolute;
+  font-family: "Orbitron", serif;
 }
 
 .hero__text-outline {

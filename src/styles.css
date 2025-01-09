@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --primary: #ff6704;
   --secondary: #787777;
   --tertiary: #dedede;
   --white: #fff;
+  --black: #000;
+  --card-color: rgba(120, 119, 119, 0.2);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Orbitron", serif;
+  font-family: "Roboto", serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #03060b;
@@ -21,5 +24,5 @@ body {
 .wrapper {
   max-width: 1200px;
   margin-inline: auto;
-  padding:20px 8px;
+  padding: 20px 8px;
 }
