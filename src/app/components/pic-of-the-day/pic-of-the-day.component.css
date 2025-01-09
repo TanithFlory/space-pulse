@@ -1,0 +1,56 @@
+.pic-of-day-section__title {
+  display: flex;
+  justify-content: center;
+  & h3 {
+    border-bottom: 1px solid var(--primary);
+    width: max-content;
+    padding-bottom: 6px;
+  }
+}
+
+.pic-of-day__wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.pic-of-day__content {
+  position: relative;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border-radius: 8px;
+}
+
+.pic-of-day__img-wrapper {
+  flex: 0 0 320px;
+  height: 320px;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.pic-of-day__copyright {
+  display: flex;
+  justify-content: end;
+}
+
+.pic-of-day__title {
+  margin: 0;
+}
+
+.pic-of-day__content-wrapper {
+  flex: 1;
+}
+
+@media screen and (max-width: 824px) {
+  .pic-of-day__img-wrapper {
+    flex: 1;
+  }
+  .pic-of-day__content-wrapper {
+    flex: auto;
+  }
+  .pic-of-day__wrapper {
+    flex-wrap: wrap;
+  }
+}

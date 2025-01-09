@@ -1,0 +1,25 @@
+@if (!picOfTheDay()){
+<p>Loading...</p>
+}
+
+<div class="pic-of-day__section">
+  <div appSectionWrapper>
+    <div class="pic-of-day-section__title">
+      <h3>Astronomy Picture Of The Day</h3>
+    </div>
+    <div class="pic-of-day__wrapper">
+      <div class="pic-of-day__img-wrapper">
+        <img [src]="picOfTheDay()?.hdurl | safeUrl" />
+      </div>
+      <div class="pic-of-day__content-wrapper">
+        <div class="pic-of-day__content">
+          <h4 class="pic-of-day__title">{{ picOfTheDay()?.title }}</h4>
+          <p class="pic-of-day__desc">{{ picOfTheDay()?.explanation }}</p>
+          <span class="pic-of-day__copyright"
+            >Copyright {{ picOfTheDay()?.copyright }}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
