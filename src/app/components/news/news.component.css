@@ -3,5 +3,24 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap:32px;
+  gap: 32px;
+}
+
+.section-bg {
+  background-image: url("/particles2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-component {
+  margin-bottom: 32px;
+
+  & h2 {
+    margin: 0 0 3px;
+  }
+
+  & p {
+    margin: 0;
+  }
 }

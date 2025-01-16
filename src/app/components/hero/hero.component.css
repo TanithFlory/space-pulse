@@ -1,9 +1,10 @@
 .hero__bg {
-  background-image: url("/hero-bg.jpg");
+  background-image: url("/hero-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
+  overflow:hidden;
 }
 
 .hero__astronaut {
@@ -35,19 +36,54 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #090909;
+  opacity: 0.2;
+}
+
+.rectangle {
+  border: 1px solid var(--text-primary);
+  max-width: 617px;
+  height: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.rectangle-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.hero__earth {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__greeting{
+  padding-top:16px;
+  padding-bottom:16px;
 }
 
 .hero__title {
   left: 50%;
   transform: translateX(-50%);
-  font-size: 160px;
   text-align: center;
   color: white;
   font-weight: 800;
   z-index: 10;
   position: absolute;
   font-family: "Orbitron", serif;
+  padding-top: 140px;
+  & span {
+    font-size: 16px;
+    display: block;
+    max-width: 250px;
+    width: 100%;
+  }
+  & div {
+    font-size: 42px;
+  }
 }
 
 .hero__text-outline {

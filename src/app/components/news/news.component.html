@@ -1,9 +1,19 @@
 @if (!news()){
 <p>Loading...</p>
 }
-
-<div appSectionWrapper class="news-wrapper">
-  @for (article of news()?.results; track article.id) {
-  <app-news-card [article]="article" />
-  }
+<div class="section-bg">
+  <div appSectionWrapper>
+    <div class="title-component">
+      <h2>Get started.</h2>
+      <p>
+        Use these Solana Foundation and community courses to begin your journey
+        into Solana development.
+      </p>
+    </div>
+    <div class="news-wrapper">
+      @for (article of news()?.results; track article.id) {
+      <app-news-card [article]="article" />
+      }
+    </div>
+  </div>
 </div>
