@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+  font-size: 39px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  height: 120px;
+  max-width: max-content;
+  margin: 0 auto;
+  padding-inline: 32px;
+}
+
+.left-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right-line {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}

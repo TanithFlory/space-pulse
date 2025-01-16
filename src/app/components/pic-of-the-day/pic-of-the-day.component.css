@@ -1,22 +1,25 @@
-.pic-of-day-section__title {
-  display: flex;
-  justify-content: center;
-  & h3 {
-    border-bottom: 1px solid var(--primary);
-    width: max-content;
-    padding-bottom: 6px;
-  }
+.pic-of-day__section {
+  background-image: url("/pic-of-day-bg.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 600px;
+}
+
+.pic-of-day__backdrop {
+  opacity: 0.4;
+}
+
+.pic-of-day__content {
+  position: relative;
+  z-index: 10;
 }
 
 .pic-of-day__wrapper {
   display: flex;
   gap: 16px;
-}
-
-.pic-of-day__content {
-  position: relative;
-  backdrop-filter: blur(35px);
-  -webkit-backdrop-filter: blur(35px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:16px;
   border-radius: 8px;
 }
 
@@ -40,6 +43,8 @@
 }
 
 .pic-of-day__content-wrapper {
+  display: flex;
+  align-items: center;
   flex: 1;
 }
 

@@ -4,7 +4,7 @@
   background-size: cover;
   height: 100vh;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .hero__astronaut {
@@ -33,11 +33,6 @@
 .hero__backdrop {
   height: 100vh;
   width: 100vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #090909;
-  opacity: 0.2;
 }
 
 .rectangle {
@@ -48,7 +43,7 @@
   width: 100%;
 }
 
-.rectangle-wrapper{
+.rectangle-wrapper {
   display: flex;
   align-items: center;
 }
@@ -60,9 +55,9 @@
   transform: translateX(-50%);
 }
 
-.hero__greeting{
-  padding-top:16px;
-  padding-bottom:16px;
+.hero__greeting {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .hero__title {
@@ -74,6 +69,7 @@
   z-index: 10;
   position: absolute;
   font-family: "Orbitron", serif;
+  color: var(--text-primary);
   padding-top: 140px;
   & span {
     font-size: 16px;
