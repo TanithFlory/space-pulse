@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  height: 600px;
+  min-height: 600px;
 }
 
 .pic-of-day__backdrop {

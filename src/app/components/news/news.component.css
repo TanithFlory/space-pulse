@@ -7,10 +7,20 @@
 }
 
 .section-bg {
-  background-image: url("/particles2.svg");
+  background-image: url("/news-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.content{
+  z-index: 10;
+  position: relative;
+}
+
+.backdrop{
+  opacity: 0.5;
 }
 
 .title-component {
