@@ -8,12 +8,12 @@ describe('TitleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TitleComponent]
-    })
-    .compileComponents();
+      imports: [TitleComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TitleComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('title', 'test');
     fixture.detectChanges();
   });
 

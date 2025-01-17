@@ -8,12 +8,12 @@ describe('NewsCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NewsCardComponent]
-    })
-    .compileComponents();
+      imports: [NewsCardComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NewsCardComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('article', 'test');
     fixture.detectChanges();
   });
 

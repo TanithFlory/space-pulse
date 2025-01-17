@@ -3,12 +3,11 @@ import { NewsCardComponent } from '../news-card/news-card.component';
 import { NewsService } from '../../services/news.service';
 import { News } from '../../../types';
 import { catchError } from 'rxjs';
-import { SectionWrapperDirective } from '../../directives/section-wrapper.directive';
 import { TitleComponent } from '../utils/title/title.component';
 
 @Component({
   selector: 'app-news',
-  imports: [NewsCardComponent, SectionWrapperDirective, TitleComponent],
+  imports: [NewsCardComponent, TitleComponent],
   templateUrl: './news.component.html',
   styleUrl: './news.component.css',
 })
